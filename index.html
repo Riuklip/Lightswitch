@@ -65,7 +65,7 @@
     <!-- MAIN CONTENT -->
     <main class="container">
 
-        <!-- ==================== HERO — Industrial Blueprint ==================== -->
+        <!-- ==================== HERO ==================== -->
         <section class="hero-section">
             <div class="hero-badge">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -118,7 +118,6 @@
                 </div>
             </div>
 
-            <!-- CIRCUIT DIVIDER (Hero → Servicios) -->
             <div class="circuit-divider" aria-hidden="true">
                 <span class="circuit-line circuit-line-left"></span>
                 <span class="circuit-switch">
@@ -130,7 +129,7 @@
             </div>
         </section>
 
-        <!-- ==================== SERVICES SECTION ==================== -->
+        <!-- ==================== SERVICES ==================== -->
         <section id="servicios" class="services-section">
             <div class="container">
                 <div class="services-header">
@@ -146,7 +145,6 @@
 
                 <div class="services-stack">
 
-                    <!-- SERVICIO 01 · SOLAR -->
                     <article class="service-block" data-accent="orange">
                         <span class="service-index">01</span>
                         <div class="service-media">
@@ -185,7 +183,6 @@
                         <span class="corner corner-br"></span>
                     </article>
 
-                    <!-- SERVICIO 02 · REDES -->
                     <article class="service-block" data-accent="cyan">
                         <span class="service-index">02</span>
                         <div class="service-media">
@@ -224,7 +221,6 @@
                         <span class="corner corner-br"></span>
                     </article>
 
-                    <!-- SERVICIO 03 · ELÉCTRICO -->
                     <article class="service-block" data-accent="yellow">
                         <span class="service-index">03</span>
                         <div class="service-media">
@@ -267,7 +263,7 @@
             </div>
         </section>
 
-        <!-- DIVIDER: Services ↔ Products -->
+        <!-- DIVIDER -->
         <div class="section-divider-wrapper" aria-hidden="true">
             <div class="circuit-divider-inline">
                 <span class="circuit-line circuit-line-left"></span>
@@ -280,7 +276,7 @@
             </div>
         </div>
 
-        <!-- ==================== PRODUCTS SECTION ==================== -->
+        <!-- ==================== PRODUCTS ==================== -->
         <section id="productos" class="products-section-wrapper">
             <div class="products-header">
                 <div class="products-header-title">
@@ -314,7 +310,7 @@
             </div>
         </section>
 
-        <!-- TEMPLATE FOR DYNAMIC PRODUCT CARD -->
+        <!-- TEMPLATE -->
         <template id="product-card-template">
             <div class="product-card">
                 <span class="corner corner-tl"></span>
@@ -342,7 +338,7 @@
             </div>
         </template>
 
-        <!-- ==================== CONTACT SECTION ==================== -->
+        <!-- ==================== CONTACT ==================== -->
         <section id="contacto" class="contact-section">
             <div class="container">
 
@@ -359,7 +355,6 @@
 
                 <div class="contact-layout">
 
-                    <!-- Columna izquierda: información -->
                     <aside class="contact-aside">
 
                         <div class="contact-info-block">
@@ -383,7 +378,7 @@
                                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                         <circle cx="12" cy="10" r="3"></circle>
                                     </svg>
-                                    <span>Santiago, Chile</span>
+                                    <span>La Habana, Cuba</span>
                                 </li>
                             </ul>
                         </div>
@@ -407,7 +402,6 @@
 
                     </aside>
 
-                    <!-- Columna derecha: formulario -->
                     <div class="contact-form-card">
                         <span class="corner corner-tl"></span>
                         <span class="corner corner-tr"></span>
@@ -457,7 +451,7 @@
 
     </main>
 
-    <!-- ==================== FOOTER — Industrial Blueprint ==================== -->
+    <!-- ==================== FOOTER ==================== -->
     <footer class="site-footer container">
         <span class="corner corner-tl"></span>
         <span class="corner corner-tr"></span>
@@ -519,7 +513,7 @@
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
-                        <span>Caibarién, Villa Clara, Cuba</span>
+                        <span>La Habana, Cuba</span>
                     </li>
                 </ul>
             </div>
@@ -531,8 +525,9 @@
                 &copy; <span id="current-year"></span> Lightswitch. Todos los derechos reservados.
             </div>
             <div class="footer-meta">
+                <span class="footer-meta-item">v1.0</span>
                 <span class="footer-meta-divider"></span>
-                <span class="footer-meta-item">Ingeniería Certificada SEC</span>
+                <span class="footer-meta-item">Ingeniería Certificada</span>
             </div>
         </div>
     </footer>
@@ -541,25 +536,42 @@
     <div class="modal-overlay" id="consult-modal">
         <div class="modal-card">
             <button class="modal-close" onclick="closeConsultModal()">&times;</button>
-            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;" id="modal-product-title">Solicitar Cotización</h3>
-            <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 1.25rem;">Confirmaremos la disponibilidad y tiempos de entrega.</p>
+            <h3 id="modal-product-title">Solicitar Cotización</h3>
+            <p>Completa tus datos y te contactaremos por WhatsApp.</p>
 
-            <form id="modal-form" style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <form id="modal-form" class="modal-form">
+                <!-- Campo oculto con el nombre del producto -->
+                <input type="hidden" id="modal-product-name" name="product_name" value="">
+
                 <div class="form-group">
-                    <label style="font-size: 0.7rem;">Tu Nombre</label>
-                    <input type="text" name="modal_name" required placeholder="Nombre" class="form-input" style="padding: 0.6rem;">
+                    <label>Tu Nombre</label>
+                    <input type="text" id="modal-name" name="modal_name" required placeholder="Nombre completo" class="form-input">
                 </div>
                 <div class="form-group">
-                    <label style="font-size: 0.7rem;">Teléfono / WhatsApp</label>
-                    <input type="tel" name="modal_phone" required placeholder="+56 9 1234 5678" class="form-input" style="padding: 0.6rem;">
+                    <label>Teléfono / WhatsApp</label>
+                    <input type="tel" id="modal-phone" name="modal_phone" required placeholder="+53 5xxxxxxx" class="form-input">
                 </div>
-                <button type="submit" class="btn-submit" style="background-color: var(--brand-orange); margin-top: 0.5rem;">Enviar Solicitud</button>
+                <div class="form-group">
+                    <label>Cantidad (opcional)</label>
+                    <input type="number" id="modal-quantity" name="modal_quantity" min="1" value="1" placeholder="1" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label>Comentario adicional (opcional)</label>
+                    <textarea id="modal-comment" name="modal_comment" rows="2" placeholder="Ej: Necesito factura, envío a..." class="form-input"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="modal-submit-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle; margin-right:0.4rem;">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Enviar por WhatsApp
+                </button>
             </form>
         </div>
     </div>
 
     <!-- WHATSAPP FLOATING BUTTON -->
-    <a href="https://wa.me/56912345678?text=Hola%20Lightswitch%2C%20necesito%20una%20cotizaci%C3%B3n"
+    <a href="https://wa.me/5356096338?text=Hola%20Lightswitch%2C%20necesito%20una%20cotizaci%C3%B3n"
        class="whatsapp-fab"
        target="_blank"
        rel="noopener noreferrer"
@@ -575,19 +587,13 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         /* ==========================================================================
-           EMAILJS CONFIGURATION
-           ==========================================================================
-           1. Crea tu cuenta gratis en https://www.emailjs.com/
-           2. Crea un servicio de email (Gmail, Outlook, etc.)
-           3. Crea una plantilla de email con las variables:
-              {{user_name}}, {{user_email}}, {{service_type}}, {{message}}
-           4. Reemplaza las siguientes constantes con tus credenciales:
-        ========================================================================== */
-        const EMAILJS_PUBLIC_KEY   = 'KQwj_Sm-penUoskR0';
-        const EMAILJS_SERVICE_ID   = 'service_m6o29ew';
-        const EMAILJS_TEMPLATE_ID  = 'template_6zky109';
+           CONFIGURACIÓN WHATSAPP & EMAILJS
+           ========================================================================== */
+        const WHATSAPP_NUMBER = '5356096338'; // +53 56096338 sin símbolos
+        const EMAILJS_PUBLIC_KEY   = 'TU_PUBLIC_KEY';
+        const EMAILJS_SERVICE_ID   = 'TU_SERVICE_ID';
+        const EMAILJS_TEMPLATE_ID  = 'TU_TEMPLATE_ID';
 
-        // Inicializar EmailJS
         emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
         /* ==========================================================================
@@ -716,10 +722,12 @@
 
         const consultModal = document.getElementById('consult-modal');
         const modalProductTitle = document.getElementById('modal-product-title');
+        const modalProductNameInput = document.getElementById('modal-product-name');
         const modalForm = document.getElementById('modal-form');
 
         function openConsultModal(productName) {
             modalProductTitle.textContent = 'Cotizar: ' + productName;
+            modalProductNameInput.value = productName;
             consultModal.classList.add('active');
         }
 
@@ -727,19 +735,58 @@
             consultModal.classList.remove('active');
         }
 
-        modalForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            closeConsultModal();
-            showToast('¡Solicitud recibida! Te contactaremos a la brevedad.');
-            modalForm.reset();
-        });
-
         consultModal.addEventListener('click', (e) => {
             if (e.target === consultModal) closeConsultModal();
         });
 
         /* ==========================================================================
-           5. EMAILJS — ENVÍO DEL FORMULARIO DE CONTACTO
+           5. MODAL FORM → WHATSAPP DINÁMICO
+           ========================================================================== */
+        modalForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Recoger los datos del formulario
+            const nombre   = document.getElementById('modal-name').value.trim();
+            const telefono = document.getElementById('modal-phone').value.trim();
+            const cantidad = document.getElementById('modal-quantity').value.trim() || '1';
+            const comentario = document.getElementById('modal-comment').value.trim();
+            const producto = modalProductNameInput.value.trim();
+
+            // Construir el mensaje dinámico
+            let mensaje = `¡Hola Lightswitch! 👋\n\n`;
+            mensaje += `Estoy interesado en el siguiente producto:\n`;
+            mensaje += `📦 *Producto:* ${producto}\n`;
+            mensaje += `🔢 *Cantidad:* ${cantidad}\n\n`;
+            mensaje += `👤 *Mis datos:*\n`;
+            mensaje += `• Nombre: ${nombre}\n`;
+            mensaje += `• Teléfono: ${telefono}\n`;
+
+            if (comentario) {
+                mensaje += `\n💬 *Comentario:* ${comentario}\n`;
+            }
+
+            mensaje += `\n¿Podrían confirmarme disponibilidad, precio final y tiempo de entrega? ¡Gracias!`;
+
+            // Codificar el mensaje para la URL
+            const mensajeCodificado = encodeURIComponent(mensaje);
+
+            // Construir la URL de WhatsApp
+            const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensajeCodificado}`;
+
+            // Abrir WhatsApp en una pestaña nueva
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+
+            // Feedback al usuario
+            showToast('¡Abriendo WhatsApp con tu consulta!');
+
+            // Cerrar modal y resetear
+            closeConsultModal();
+            modalForm.reset();
+            document.getElementById('modal-quantity').value = '1';
+        });
+
+        /* ==========================================================================
+           6. EMAILJS — FORMULARIO PRINCIPAL DE CONTACTO
            ========================================================================== */
         const mainContactForm = document.getElementById('main-contact-form');
         const submitBtn = mainContactForm.querySelector('button[type="submit"]');
@@ -748,7 +795,6 @@
         mainContactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // Estado de carga
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span>Enviando...</span>';
 
@@ -773,7 +819,7 @@
         });
 
         /* ==========================================================================
-           6. TOAST
+           7. TOAST
            ========================================================================== */
         function showToast(message) {
             const toast = document.createElement('div');
