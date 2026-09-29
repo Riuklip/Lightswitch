@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lightswitch | Instalaciones Eléctricas, Redes y Energía Solar</title>
-    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/logo_lightswitch__2_-removebg-preview.ico" type="image/x-icon">
 
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
-    <!-- STICKY NAVIGATION BAR -->
+    <!-- ==================== HEADER — Industrial Blueprint ==================== -->
     <header class="header-sticky container">
         <nav class="navbar">
+            <span class="corner corner-tl"></span>
+            <span class="corner corner-tr"></span>
+            <span class="corner corner-bl"></span>
+            <span class="corner corner-br"></span>
+
             <a href="#" class="logo-container">
-                <img src="images/logo_ls-removebg-preview.png">
+                <img src="images/logo_ls-removebg-preview.png" alt="Lightswitch">
             </a>
 
             <ul class="nav-menu">
@@ -59,7 +65,7 @@
     <!-- MAIN CONTENT -->
     <main class="container">
 
-        <!-- HERO SECTION -->
+        <!-- ==================== HERO — Industrial Blueprint ==================== -->
         <section class="hero-section">
             <div class="hero-badge">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -111,125 +117,211 @@
                     <span>Autonomía Fotovoltaica</span>
                 </div>
             </div>
-        </section>
 
-        <!-- SERVICES SECTION -->
-        <section id="servicios" class="section-padding">
-            <div class="section-header">
-                <span class="section-tag">Nuestros Servicios</span>
-                <h2 class="section-title">Especialidades Técnicas</h2>
-                <p class="section-desc">Diseñamos e implementamos infraestructura de calidad superior para proyectos residenciales y comerciales.</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div>
-                        <div class="service-icon-box icon-electric">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                        </div>
-                        <h3 class="service-title">Instalaciones Eléctricas</h3>
-                        <p class="service-text">
-                            Montajes eléctricos de baja y media tensión, tableros de distribución, iluminación LED y mantenimiento correctivo.
-                        </p>
-                    </div>
-                    <ul class="service-list">
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Cuadros de protección y puesta a tierra
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Mantenimiento industrial y residencial
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div>
-                        <div class="service-icon-box icon-network">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                            </svg>
-                        </div>
-                        <h3 class="service-title">Redes y Telecomunicaciones</h3>
-                        <p class="service-text">
-                            Cableado estructurado de datos, enlaces inalámbricos de alta ganancia, y soluciones Wi-Fi corporativas.
-                        </p>
-                    </div>
-                    <ul class="service-list">
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Enlaces inalámbricos Punto a Punto
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Organización e identificación de subredes
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div>
-                        <div class="service-icon-box icon-solar">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="5"></circle>
-                                <line x1="12" y1="1" x2="12" y2="3"></line>
-                                <line x1="12" y1="21" x2="12" y2="23"></line>
-                            </svg>
-                        </div>
-                        <h3 class="service-title">Energía Solar Fotovoltaica</h3>
-                        <p class="service-text">
-                            Instalación de paneles solares, inversores híbridos y almacenamiento en baterías de litio para independencia energética.
-                        </p>
-                    </div>
-                    <ul class="service-list">
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Sistemas Off-Grid e Híbridos
-                        </li>
-                        <li>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Acumulación LiFePO4 de larga vida útil
-                        </li>
-                    </ul>
-                </div>
+            <!-- CIRCUIT DIVIDER (Hero → Servicios) -->
+            <div class="circuit-divider" aria-hidden="true">
+                <span class="circuit-line circuit-line-left"></span>
+                <span class="circuit-switch">
+                    <span class="circuit-node"></span>
+                    <span class="circuit-bar"></span>
+                    <span class="circuit-node"></span>
+                </span>
+                <span class="circuit-line circuit-line-right"></span>
             </div>
         </section>
 
-        <!-- DYNAMIC PRODUCT STORE SECTION -->
+        <!-- ==================== SERVICES SECTION ==================== -->
+        <section id="servicios" class="services-section">
+            <div class="container">
+                <div class="services-header">
+                    <span class="section-tag">// SERVICIOS</span>
+                    <h2 class="section-title">
+                        Soluciones de ingeniería<br>
+                        <span class="text-gradient">sin margen de error</span>
+                    </h2>
+                    <p class="section-desc">
+                        Tres frentes técnicos, un mismo estándar: potencia, conectividad y autonomía bajo norma.
+                    </p>
+                </div>
+
+                <div class="services-stack">
+
+                    <!-- SERVICIO 01 · SOLAR -->
+                    <article class="service-block" data-accent="orange">
+                        <span class="service-index">01</span>
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1668097613572-40b7c11c8727?q=80&w=1200&auto=format&fit=crop"
+                                 alt="Paneles solares fotovoltaicos instalados">
+                            <div class="service-media-overlay"></div>
+                        </div>
+                        <div class="service-body">
+                            <span class="service-label">01 / Energía Solar</span>
+                            <h3 class="service-name">Energía Solar & Fotovoltaica</h3>
+                            <p class="service-description">
+                                Sistemas híbridos y <em>Off-Grid</em> dimensionados a tu consumo real.
+                                Respaldo con baterías LiFePO4 de última generación y control inteligente.
+                            </p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Almacenamiento residencial y comercial (Zero Grid Export)
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Dimensionamiento a medida e inversores de onda pura
+                                </li>
+                            </ul>
+                            <a href="#contacto" class="service-cta">
+                                <span>Solicitar cotización</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="corner corner-tl"></span>
+                        <span class="corner corner-tr"></span>
+                        <span class="corner corner-bl"></span>
+                        <span class="corner corner-br"></span>
+                    </article>
+
+                    <!-- SERVICIO 02 · REDES -->
+                    <article class="service-block" data-accent="cyan">
+                        <span class="service-index">02</span>
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200"
+                                 alt="Enlaces inalámbricos y racks de datos">
+                            <div class="service-media-overlay"></div>
+                        </div>
+                        <div class="service-body">
+                            <span class="service-label">02 / Redes</span>
+                            <h3 class="service-name">Redes & Telecomunicaciones</h3>
+                            <p class="service-description">
+                                Enlaces inalámbricos PTP/PTMP de larga distancia, cableado estructurado Cat6A
+                                y racks de datos organizados bajo estándar.
+                            </p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Enlaces Punto a Punto de alta ganancia (TP-Link, Ubiquiti)
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Cableado estructurado Cat6A para empresas
+                                </li>
+                            </ul>
+                            <a href="#contacto" class="service-cta">
+                                <span>Solicitar cotización</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="corner corner-tl"></span>
+                        <span class="corner corner-tr"></span>
+                        <span class="corner corner-bl"></span>
+                        <span class="corner corner-br"></span>
+                    </article>
+
+                    <!-- SERVICIO 03 · ELÉCTRICO -->
+                    <article class="service-block" data-accent="yellow">
+                        <span class="service-index">03</span>
+                        <div class="service-media">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1200"
+                                 alt="Tableros e instalaciones eléctricas">
+                            <div class="service-media-overlay"></div>
+                        </div>
+                        <div class="service-body">
+                            <span class="service-label">03 / Eléctrico</span>
+                            <h3 class="service-name">Instalaciones Eléctricas</h3>
+                            <p class="service-description">
+                                Infraestructura de baja y media tensión con tableros de protección,
+                                supresión de picos y puestas a tierra certificadas.
+                            </p>
+                            <ul class="service-features">
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Protección contra sobretensiones y picos
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Auditoría de carga, balanceo de fases y certificación
+                                </li>
+                            </ul>
+                            <a href="#contacto" class="service-cta">
+                                <span>Solicitar cotización</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <span class="corner corner-tl"></span>
+                        <span class="corner corner-tr"></span>
+                        <span class="corner corner-bl"></span>
+                        <span class="corner corner-br"></span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVIDER: Services ↔ Products -->
+        <div class="section-divider-wrapper" aria-hidden="true">
+            <div class="circuit-divider-inline">
+                <span class="circuit-line circuit-line-left"></span>
+                <span class="circuit-switch">
+                    <span class="circuit-node"></span>
+                    <span class="circuit-bar"></span>
+                    <span class="circuit-node"></span>
+                </span>
+                <span class="circuit-line circuit-line-right"></span>
+            </div>
+        </div>
+
+        <!-- ==================== PRODUCTS SECTION ==================== -->
         <section id="productos" class="products-section-wrapper">
             <div class="products-header">
-                <div>
-                    <span class="section-tag">Catálogo de Equipos</span>
-                    <h2 class="section-title">Venta de Productos</h2>
+                <div class="products-header-title">
+                    <span class="section-tag">// CATÁLOGO</span>
+                    <h2 class="section-title">Venta de <span class="text-gradient">Productos</span></h2>
+                    <p class="section-desc">
+                        Equipos seleccionados y probados para instalaciones críticas.
+                    </p>
                 </div>
 
-                <!-- Interactive Filters & Search for Dynamic Rendering -->
                 <div class="product-controls">
-                    <input type="text" id="product-search" class="search-input" placeholder="Buscar producto...">
-                    <button class="category-filter-btn active" data-category="all">Todos</button>
-                    <button class="category-filter-btn" data-category="Redes">Redes</button>
-                    <button class="category-filter-btn" data-category="Solar">Solar</button>
-                    <button class="category-filter-btn" data-category="Eléctrico">Eléctrico</button>
+                    <div class="search-wrapper">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="product-search" class="search-input" placeholder="Buscar producto...">
+                    </div>
+
+                    <div class="filter-group">
+                        <button class="category-filter-btn active" data-category="all">Todos</button>
+                        <button class="category-filter-btn" data-category="Redes">Redes</button>
+                        <button class="category-filter-btn" data-category="Solar">Solar</button>
+                        <button class="category-filter-btn" data-category="Eléctrico">Eléctrico</button>
+                    </div>
                 </div>
             </div>
 
-            <!-- DOM target container where template instances will be appended -->
             <div class="products-grid" id="products-container">
                 <!-- Template instances injected dynamically by JS -->
             </div>
         </section>
 
-        <!-- ===================================================================================== -->
-        <!-- HTML TEMPLATE FOR DYNAMIC PRODUCT CARD RENDER                                       -->
-        <!-- ===================================================================================== -->
+        <!-- TEMPLATE FOR DYNAMIC PRODUCT CARD -->
         <template id="product-card-template">
             <div class="product-card">
+                <span class="corner corner-tl"></span>
+                <span class="corner corner-tr"></span>
+                <span class="corner corner-bl"></span>
+                <span class="corner corner-br"></span>
+
                 <div>
                     <div class="product-image-holder">
                         <span class="product-tag js-product-category">Categoría</span>
@@ -240,98 +332,266 @@
                 </div>
                 <div class="product-footer">
                     <div class="product-price">
-                        $<span class="js-product-price">0.00</span> 
+                        $<span class="js-product-price">0.00</span>
                         <span class="product-currency">USD</span>
                     </div>
-                    <button class="btn-consult js-product-btn">Consultar</button>
+                    <button class="btn-consult js-product-btn">
+                        <span>Consultar</span>
+                    </button>
                 </div>
             </div>
         </template>
-        <!-- ===================================================================================== -->
 
-        <!-- CONTACT SECTION -->
-        <section id="contacto" class="section-padding">
-            <div class="contact-box">
-                <div style="text-align: center;">
-                    <span class="section-tag">Contacto e Inspecciones</span>
-                    <h2 class="section-title">Cotiza tu Proyecto</h2>
-                    <p class="section-desc">Escríbenos para consultas sobre instalaciones eléctricas, enlaces de red o paneles solares.</p>
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section id="contacto" class="contact-section">
+            <div class="container">
+
+                <div class="contact-header">
+                    <span class="section-tag">// CONTACTO</span>
+                    <h2 class="section-title">
+                        Cotiza tu<br>
+                        <span class="text-gradient">proyecto</span>
+                    </h2>
+                    <p class="section-desc">
+                        Escríbenos para consultas sobre instalaciones eléctricas, enlaces de red o paneles solares.
+                    </p>
                 </div>
 
-                <form class="contact-form" id="main-contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Nombre Completo</label>
-                            <input type="text" id="name" required placeholder="Ej: Juan Pérez" class="form-input">
+                <div class="contact-layout">
+
+                    <!-- Columna izquierda: información -->
+                    <aside class="contact-aside">
+
+                        <div class="contact-info-block">
+                            <span class="info-label">// CANALES DIRECTOS</span>
+                            <ul class="info-list">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <span>contacto@lightswitch.cl</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    <span>+53 56096338</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <span>Santiago, Chile</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" required placeholder="correo@ejemplo.com" class="form-input">
+
+                        <div class="contact-info-block">
+                            <span class="info-label">// HORARIO DE ATENCIÓN</span>
+                            <ul class="info-hours">
+                                <li><span>Lunes – Viernes</span><span>09:00 – 18:00</span></li>
+                                <li><span>Sábado</span><span>10:00 – 14:00</span></li>
+                                <li><span>Domingo</span><span>Cerrado</span></li>
+                            </ul>
                         </div>
+
+                        <div class="contact-info-block">
+                            <span class="info-label">// TIEMPO DE RESPUESTA</span>
+                            <p class="info-note">
+                                Cotización preliminar en menos de <em>24 horas</em>.<br>
+                                Inspección técnica agendada en <em>72 horas</em>.
+                            </p>
+                        </div>
+
+                    </aside>
+
+                    <!-- Columna derecha: formulario -->
+                    <div class="contact-form-card">
+                        <span class="corner corner-tl"></span>
+                        <span class="corner corner-tr"></span>
+                        <span class="corner corner-bl"></span>
+                        <span class="corner corner-br"></span>
+
+                        <form class="contact-form-blueprint" id="main-contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nombre Completo</label>
+                                    <input type="text" id="name" name="user_name" required placeholder="Ej: Juan Pérez" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico</label>
+                                    <input type="email" id="email" name="user_email" required placeholder="correo@ejemplo.com" class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service-type">Servicio Requerido</label>
+                                <select id="service-type" name="service_type" class="form-select">
+                                    <option>Instalaciones Eléctricas</option>
+                                    <option>Redes y Telecomunicaciones</option>
+                                    <option>Energía Solar / Fotovoltaica</option>
+                                    <option>Compra de Productos / Equipos</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Detalles del Mensaje</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Describe brevemente lo que necesitas..." class="form-textarea"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit-blueprint">
+                                <span>Enviar Consulta</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
 
-                    <div class="form-group">
-                        <label for="service-type">Servicio Requerido</label>
-                        <select id="service-type" class="form-select">
-                            <option>Instalaciones Eléctricas</option>
-                            <option>Redes y Telecomunicaciones</option>
-                            <option>Energía Solar / Fotovoltaica</option>
-                            <option>Compra de Productos / Equipos</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Detalles del Mensaje</label>
-                        <textarea id="message" rows="4" required placeholder="Describe brevemente lo que necesitas..." class="form-textarea"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Enviar Consulta</button>
-                </form>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- ==================== FOOTER — Industrial Blueprint ==================== -->
     <footer class="site-footer container">
-        <div class="logo-container" >
-            <img src="images/logo_ls-removebg-preview.png" alt="">
-            <p>Servicios electricos y comunicaciones</p>
+        <span class="corner corner-tl"></span>
+        <span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span>
+        <span class="corner corner-br"></span>
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="images/logo_ls-removebg-preview.png" alt="Lightswitch">
+                </div>
+                <p class="footer-tagline">
+                    Servicios eléctricos, redes y energía solar.
+                    Ingeniería de precisión bajo norma.
+                </p>
+                <div class="footer-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Operativo · Aceptando proyectos</span>
+                </div>
             </div>
 
-        <div class="footer-copy">
-            &copy; <span id="current-year"></span> Lightswitch. Todos los derechos reservados.
+            <div class="footer-col">
+                <span class="footer-label">// NAVEGACIÓN</span>
+                <ul class="footer-links">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-label">// SERVICIOS</span>
+                <ul class="footer-links">
+                    <li><a href="#servicios">Energía Solar</a></li>
+                    <li><a href="#servicios">Redes & Telecom</a></li>
+                    <li><a href="#servicios">Instalaciones Eléctricas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <span class="footer-label">// CONTACTO</span>
+                <ul class="footer-contact">
+                    <li>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>contacto@lightswitch.cl</span>
+                    </li>
+                    <li>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>+53 56096338</span>
+                    </li>
+                    <li>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Caibarién, Villa Clara, Cuba</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; <span id="current-year"></span> Lightswitch. Todos los derechos reservados.
+            </div>
+            <div class="footer-meta">
+                <span class="footer-meta-divider"></span>
+                <span class="footer-meta-item">Ingeniería Certificada SEC</span>
+            </div>
         </div>
     </footer>
 
-    <!-- CONSULTATION MODAL -->
+    <!-- ==================== CONSULTATION MODAL ==================== -->
     <div class="modal-overlay" id="consult-modal">
         <div class="modal-card">
             <button class="modal-close" onclick="closeConsultModal()">&times;</button>
             <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;" id="modal-product-title">Solicitar Cotización</h3>
             <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 1.25rem;">Confirmaremos la disponibilidad y tiempos de entrega.</p>
-            
+
             <form id="modal-form" style="display: flex; flex-direction: column; gap: 0.85rem;">
                 <div class="form-group">
                     <label style="font-size: 0.7rem;">Tu Nombre</label>
-                    <input type="text" required placeholder="Nombre" class="form-input" style="padding: 0.6rem;">
+                    <input type="text" name="modal_name" required placeholder="Nombre" class="form-input" style="padding: 0.6rem;">
                 </div>
                 <div class="form-group">
                     <label style="font-size: 0.7rem;">Teléfono / WhatsApp</label>
-                    <input type="tel" required placeholder="+56 9 1234 5678" class="form-input" style="padding: 0.6rem;">
+                    <input type="tel" name="modal_phone" required placeholder="+56 9 1234 5678" class="form-input" style="padding: 0.6rem;">
                 </div>
                 <button type="submit" class="btn-submit" style="background-color: var(--brand-orange); margin-top: 0.5rem;">Enviar Solicitud</button>
             </form>
         </div>
     </div>
 
-    <!-- JAVASCRIPT LOGIC -->
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/56912345678?text=Hola%20Lightswitch%2C%20necesito%20una%20cotizaci%C3%B3n"
+       class="whatsapp-fab"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-tooltip">¿Necesitas ayuda? Escríbenos</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
     <script>
-        // Set dynamic current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
         /* ==========================================================================
-           1. PRODUCT DATA JSON / ARRAY
+           EMAILJS CONFIGURATION
+           ==========================================================================
+           1. Crea tu cuenta gratis en https://www.emailjs.com/
+           2. Crea un servicio de email (Gmail, Outlook, etc.)
+           3. Crea una plantilla de email con las variables:
+              {{user_name}}, {{user_email}}, {{service_type}}, {{message}}
+           4. Reemplaza las siguientes constantes con tus credenciales:
+        ========================================================================== */
+        const EMAILJS_PUBLIC_KEY   = 'TU_PUBLIC_KEY';
+        const EMAILJS_SERVICE_ID   = 'TU_SERVICE_ID';
+        const EMAILJS_TEMPLATE_ID  = 'TU_TEMPLATE_ID';
+
+        // Inicializar EmailJS
+        emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+        /* ==========================================================================
+           1. PRODUCT DATA
            ========================================================================== */
         const productsData = [
             {
@@ -356,22 +616,17 @@
                 category: "Solar",
                 description: "Inversor de onda senoidal pura 24V con controlador MPPT de 100A incorporado.",
                 price: 450.00,
-                image: "data:image/webp;base64,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"
+                image: "data:image/webp;base64,UklGRlQ2AABXRUJQVlA4IEg2AABQ2gCdASpaAdQBPj0ci0SiIaERqoWcIAPEtLdnpk5L/Lz9X5HgP6rjQGArnw2MRw9kzHAHKBeV7K+i/OH8DzveZfFX31qZ/p+rjqLycuXPPn6IvMA/XH1C/8H1TfuB6gP53/iv+T/o/eK/uX7he7X9e/2P+A/+df3nrKPQY/bL01P3V+Ff+t/8X90PZ7/8+sofR/Kx88/iv85+U37o+uvkF9EeyX93/8v7//mD+Z/13jf66/4PoV/NfvN+G/u/7Wf4n9oPvJ/P/5/7mfU/4vf3/5k/AX+M/y/+6f139ov73+7P17/T/7v8ufH51r/Qf9P/N+wL63fO/8T/av8n/xP8B+4/2cfW/7D8yvdX+A/x3+3/Lv6Af5Z/Of8R/ev2g/f/7E/5P+y8gL7R/of+R/gvxV+wb+U/0r/Mf3v/M/8D/N///59P8v/Q/6X/1f6X3Z/Qf/J/x37xf5r///gT/Kv6j/rv77/nf+5/kv///4/uF/bT//+6H+wv/iKZrN8yffisSLKdIGhdColExxI2HT4Lf8IIfWAffBs1DOa4P7ZJlkhQI/mzO3USwc55u81WiONPetBkoewBaPIHBtFLocTjp2IL+qh+q0hsDObzdrS2jAeF9n3J3EycxrPfH9OdlMJRc8VJMjqDHgOdwcRvGw2mrTCwMXlsxPqeukwh/Le5jUnPGt8W8VEYsbEsaLHgDnGwL0Dh4PMHmArhuLOKS6FQmLYfj9DiX1iwuoFXxn2b4rbM3jBqRao+cVc6XbPAVvs4nTAgEKSEyrXm5zkQj6mjrw3zel4GnR5pnz70Y6bS8F0rswUQiXRFrTr7JJeVDdKGHZHfJnFnHjQRCEaN+Djd4fU+gCrcUDMMwJZGMbQGQhGshRd2R4SzFwx9ARmMNIvE3nmK32oWADZ+RN2hcqWPOLq9BxU1977C6D9h+X9aGxgsACCaiZ5JL4fGJfPIr3jjUSfoVEfvB7+kvHVfhR29lewbwy0JZvq2sbyVqjefoEhGfVvBcznrn1E98DXRzwISYOf3ZwVhXufL71OPMr/RVm/MFSxIfMhwUHBQIgfMYtsZGSoARxplegcHHwTuBzlNcSTvKTjwI2K2a3Mgs9OeZC/gu1S6LcXJehjUYxfidglrPfs1rHosnN6GMq7MqhAV9GmUJ1oY6wWTAeMqgOpDg6ltiqCPbyrVZfKwrgfCKNz+mBGsecFL2NhtZj3kvTX49BSSojw62YlaVfkn3Bgju7QKLJ5DOL1Z/n1r6s/KrL1GAWY3fsTib7YUfcRwcg2WFrMM6wZINUhRxFa3dYfuEoBzEwTHHK7yTQnH8ASKUKjONKshM2f6zCI6Wq1/AYTY4lebffkedqYD78zTfUnxRKvpOcn8vtMN43G+M6wO3MVazVOOlAH1F/w+meCu1qNHvBLWw2pGazNjgatr4l6t7gB1GUnKcO07Oxke+BC3xb4tDDH/5yzUxW5jHaRxe5FfMoIwFvi5wZE49QZ2UU0DC9bRXLlT0AN+bXkWwyYZ38aVt/Vmffjh1syPPa9tRXmXywcW+LnBkupAC+6rleCMg0+wI8xiHoZMMmJxDHIFcRategij28jPtahEJxNHg8weYPK20bcjDVctzI6Nn8EhGUHunRVxzch263xb4gjGb94caAZywvsC/KAzvB4M6tPVo3Dga0YGLWxGCRqC4D/n7zUyNUkV9xV0mhKXY8MLeNhYNE0VBsw5vXSTtfwBGZLzmQnY26ywCXIlRtPGuILh28187Unsj6uRsykZIb6jJIBSzzeeACQyeXxSkWHAMKKEv8ibgwyckME6vkYlOSKeF5zOeMviH0g0ZoU+dA7MwUnEkzJ0Wd2qHittxxpW+9/w/qlT1d8HDcrd34ypvOMQ4+01T5qMlsvGwXNzO7sLmLIwjTS0L5nyqJgrzabp24ckDytZDA36uvT+RdJXeggiTW5t5Ovh/Rd/Thh8FvxVq4M7P42f8X/ivbPH8bUH+6M3EPBBTGDfIDAPqS31hYwgiLPE0XoIZ7M97iJGm317KWvJgoBLRKe5MinyV/6sM86/Rj79NqMnyQNlBn40hBa85ssyFHrgcZ1pFtVQXFnIlr71IDGy6qUSd5693DTM9ruqsGpR0m36ziCv2/5hU7rmFjYeOFeNPWwOfvNH7+DWiwuOSRyF5HenyOsLL7vSKC1aMwQK/Zx3xV9JSE97TG+5FveKIWb07ZzI6GEj2HiuAYms8aWWkObEAEfLsITMDq/Nh1oiqJWXoteTZF+WqeoytlbSnMWgul5V8Bp1YrTaL24Z6NfuzXjftZxTyikVewPl1cq9rXngy0iG24Sauk5JEZlMZI+poAA/v9ekSn58gL6RqhNdkqPE4QKvaJItA98Oyey+L1fd4sC/oh9P1dI8XE73IvVAHD8BfZtmTkINQf3hCxjCCmt+0Ci55YZ/lqo//7UXxHib+/r0rA8BkSRMo/GauTCeR2Lj61LBKuht9xVceQoDB1OpAS+FO/Jw6XrCRkccGPLV8VdO9lyoXgV8EM0Dg7zO3iwOZwgsIf8mSovuaAtEwKqn4IOlOcf8ZKoPV9kRvQEDDGjhIq7E5rJxO6Mbhd7j3nSNVqMJvbHHQ4x8sDf0rkBdVcq254gSnbFX+ThNlGfzXHvN6g9mZg32nczJKON04quO4HF6S/VosTibHGweeDwoF3iHkVZeX0L71GgnXA18+lCSLtYe5YLOTha5l2Igr5ViUQL4IojlFoLDfQqDUTyhBpweVRVjJV42xr5J6KM43kknZO36MbL420tsC/pIiECiB24r1w0mHc2TUTlJKYBsxgP1LFK8HkcjrAKykI10h8IvjLBNcVptgjMzWjywm+phvQyPLtaXuhpUVE0T7MWwMulyzIGxU9GhoiUXf+yiCL+sv24veHTB+RkV/zKAIsdyZN7bDCOcUL+Z4nbMipHSBboYYnAus9sE9I0pzSpZtNlCi2I4TgUaHR0lSroGGkQwL2gV7DDPfHk2VbbK9fRooy6Zbwf9CkbmF0J3Nwe15ogEY/MVaIVUPkCV5u77ydpMqbn8251nmNuQwaT4U/4SKdXHuZvkx7TOXWxBeKBH5Qh9waPvI62iN3L/jTdiH7XjRRH34H6P2CdE7MCs1Dshf/Ts4IE3YTnhLTd9jddtOfmU1cjoEsptdNv88nBN3TqtgOryRHuYL5y1cQNYQ4l4569R583StAE0RxDUipRkvQlRHpRORrfVvRCHeAyObEUhygp2J4FQodTyJv5ZpgmmCG1oUGuml6NJ/RM0G8P+ZylkjstL0b/phxmRJFKoE09UECTo6HQsQz08So1nq0mUSi5mTmAHM4xFReq0gJzkWDWNUlyVlHOY2JImUqqlJDlF+V8vtykHUGAqVUahGmU4xaI+hMMUYevLvAPcybewrwbnvUAllHiayatkPQe+L5MKP6AmDBX6iNg6sRD7i49p27C4WSAadCTWBSGUADiOtH8YD6AIkO5PJ4CRZgrsJWN39DFV/R63C+2lXKKBMGmwULSKytsdXOPbGbDKg+ID+TAzGJ5ZkXKC32UiDAEu+kMKAuv5Tmk2AhhJh8StWrCSmOYgC+Jn/J3DJpfxvdpixRkSGEAMSSHkC/Fsrce2yPrhTtdiaYtC952/8w9WMg2S2ceOmCqKwAs0FbouG6ELe5cjUC82hM8IRvorodSCf0Jz0BD51AQ8aVahJqCzjHeHBng6mXjFT4fAjw9bzd7LvkknYL3dp8lJmlzZD03ZXgi6c7UmvqirdfsdJMVsWXZOzbdQr1guSGOrNpzqGjupysidCAuskFr8gdxeLyzjdlUriuYJ2kQpsGOGs5oEfDhWkvEX4lFDLcqF6qfXO1EyNjJrB4N87wtqdH4ka70wUmmLIRb1vveeq/zPXPFdqxJSarcl2kv6HuvIEsFPDAVfIn/NDqx7mkiRElXBBkuW/GGumdmx/U+gYlcLQwYqPUjKb8+mRf88cs5c31d6oT47WXpvkrWv68wMok59lt3rtCcTGdL5Xr5+r/PT3hwdQ/dofnF5O8JiKpSJS61kFdonsrnNFxCo6Grml4Fw0Nmx/+KIWAOfLneMvnP3IHgDhY0He6uOkUqoC8u2hOOo2kb1WkPvdG5DdL3i5yNUQR8RI0MKOBNetSEa1ouATtsbcKt8vZVNxbOuFLBichwV4HEuWlDVB0Ly7zzP0kYtl4EHoMrynPMChTkbf3hsfAUs7gcVUrI51tz7ErY9X32h9FnTXVCfLLFIUwVvh1m/CX5vM1WtUGXiamP4SIu1I9DBN6SDhRsKgqvkidg2yZuTWYcMQGpJiTtSLnX8GKh9K6vEPBTXu4k26N252Rz1elO8aGpMM7YG23m2DwPf5pBvTrOvQn0yvF7hpv0VIZpK8KS05SPYgBOkLy1Rs2AsLnxRwyzr4v4JeoreXMIkaiEbC4ajVa3/EXIvXaTuv0L6fQRP7id9EwYPIEGv7Pq0Syjm1bwWBJDIkUM8cow+8Wj5XniCHo4RFMVyaJzyQHwzi4C3AmaltmovsAgdGDQivBughcDIkPjAsyclwyvda7AnankJF6bnNGKDpysJwnJIlkz2Tv+qNxohaU/ImT1kCdmi6NQU4fZRgSBgdtCTiCxORZJmOnyCDNtw7k7JE/Bczj3Zo9OfMANSd8igubHa6mTHgRXXaKHrcLyAvKcRszZVoV2iSeAaxReMKNdFwJHM6itXjey8ukekISw6e2k1Kre0f5cq8D/NYL9mrvuIOodSzQSfiKV993p6KejIYuqlcIZXff7YtUNVCWmYQ5QIehukKCUjdXMWtR61zEJMKE7o6FVUBVAZcvZ+FhHvg0LDC79z0BWipijpB2cAdYmg9shwAuo1Dp5VaC8Bn8tXEDHgYMg2RM/WHz1NU/MrfLpn9iL/n5fJc0oWn88Sm9Awhtb/33XZEeZn1/4fv7HBPM3pWnMv1Du4v/1dUTZa79hbUM/SO5qsLVthdvMaSHu8XrGB+w2e2gYlNpF2mZhEMxJ4xVVmKgzZ4nqIZHblUsHGw0d8esGIXPB539Do20N1WcEJgq1e0C2+NHWwHsfpmvFHTZ5NRuIVhaejxdbW+brjfkSOv6FVgs4m3cePXk1FRMUtZO2FxIpH9E9ZY7IPeX11hQSfExDxg2zx63ei139d5XsV9Ly/N52I6ntwtC7vMrxHjg3WKZUgjez4/magSi/tV7Gz0Qzyr6o/CQpSrylB9fazCLDX8OKWeCV785mltXKNKrRJpyAIz/SIdlAVRLgbNiY4Kn+fpegd6wTWxkh7ZBT7Z5lB7HgpsUK38HbNIRm+j8u5ndE9LmL1Su+cyuS6EIN3Ni6caCWBLlg1j/Qgrcg9OaUlY0Laqf5mWdO6d/FpS4Vy+cnaZQHypYU6UcKrkrxtUeFjYTMI62MONTjebk/Rio7QU3nT0nW03qvZv3O0Dmjn3FJO/N9KPf5/P3QPJqu0G0h7zIUJlv3+9UXonzMqrmE/+/rRPxIc3CxL30GxemYp/izcHspF/iioYh2/2kYtfe9dNOWwENauzINkmeyLC9X8m9FzP9bOcUjObzn62B3kCr5pE4fxCo3b5xKNM6aR7FIdOfmP5BMaJIazDiq1mp1/80laWh/KYwpw1EeWvHt7QB7Rq+lqHE1gMIA23wpMq9hHyY6IR50P78iQdMYBxFGOBRckmYPqkyt63TZ6WMZuGhkH/yuSMkOY0KQU6CtjrgZ+WCOfN7l7wHMRwiWVecQX8mG/3DCFqPs5KxZ1o0Xf9MqXxQR4oVNw+rUASdDOMIZ0SBvHO0YtHzm/F2YAK3rGC8PI4lB9uEgITqbM1+ku+LPv9WD3cznNMEDV2O+uJb7bzfr1Kyt1rlq0Mvfws4qrUynU36WMaD+sVm+NCt1aJfwFACjhY+6VqMXs90ZY3VdOeiltnK0VAsf+QriqAracF7htiLWyfcE6cS5eQSp+alFu0zdar2+bZuibSH6+tggo3LhPilBT7ITRqK06Yj8OEt+xblemqtmBOQv2xE9wMDislWq9VqBpMkop6sA1RSXfsW9vA+UkQjItXvzT+yHafRQljVLZkc4aoDiAznzlvIHjlv+TfD0Lk204iZY3tlzASGGkdwJpSBe9qbiYeYgYJPXri5w6E1stDv2C1R82j+4ALB9Q564NK452rLoXldY7NEEc+mroQK9DR130oG4v7Qb5hoWHmc3ufTfOSIoMEyKRSBZEofzWgT2Zm7qe6ojVAta0taXmkJKLR498bnnq5+US8kyh8hA81P1KZKOpzlAg/FbfKWjObs4+kK/fqj36L4CcHscwIDs19NHfDGggLlQ8EQVnUuGWkCN5RAMZI7pcACgrx0Ih9uyisFnVbMLC6s8fhBn2QuBC1apGosqkNqYSIm0WqF/iwH/5Lqq9QcvJRiR3u/dXoF2VNjNPFMuQkP7j6zQMtfRJg1Ufvq239yXn3EffhY7sogNaI8CBki/FNzW05eUrfT2lrfusXmpc8pyZfEeNI/0HK+EisgfNqRhhw06wPulDY/QS0RuRf8JWGdkvl6BNHjv4s7t7yVrdihrwLs1K94TFhWDua28FbgvkJGymE+w8M+7l7rh7X4y+wqk+PTttiMjuY96qiiW27ktUN/JnxzT5if0aIHfGC7zQKiS9PAu13Q+tjcllpKQ98BVYaPTqpT1OK8KNfL0B+SUwWvskk/U8QQDVuXFnxpHkAdMoB4hWPdbAkqgZyQxbevt+HkczP8hd5b3MFsr3R9GKg2kErJFze9ftd2d5hSHJlJTDStMkaSSr6NZPgyzYvZLZe0fm3BywKtmiYbKb4TDf1Jd6ka8NY+zZWvI+gWchjpbqOrZxWFbuaylsRdphMHyaQRXu0IOMSEJ0OkSBbGYGHavC9zboF+GbHWXUD5C1icoYr5jIC9MIKeq/aRRKy8uxRQXe2GFVa7ZPBDmiXjuIrTiHaYPAgkZHE1sm/+ogxaCoJUxbkWjIWoXsgkVfhDdXoSoKtGQd5yiUFj5r+qj9wyq1EV4IOj+2SjyKOMc1jkeY0//Jw7p35+UeC9+34KA2AHrZmiCLwBnSwMEb+dQY+WVk31Ohkd4vrVqs9nzQsQlAuB74MvCvGpnrDoeLebbrq+SvvQsn8L0/kkgAGsuKCm2SeHE+gFVLgxbMr0SU+SwYbBbhTNDUAyU65w2fAEFQMZaeVS9G1rxrQ+uEyb0C7bzygHt1ZAEGnQlFHm358ZiQ1qb7Ye4ezzMDwht5Orypr0DKQu17ynKZSdeDq3hkW1wlaxrGB5hRSinpl50683u5E5Aqz5UOm6jcrIuFOvMCbe+N8IXrs9kLr2GnyTSkcCSJQqb4LIlHaJMy4hK/3LMYqeIu5eDMFAsqwopMSWsUsOaZZapTa1FbxyTYRXcqOIyM5oiTCWzrcMiasZEY8JCX64vdyggBLEG7xAR2jFI8e+0co7UpxSDC2j9FKb3DLaxtfuv7PDIaZzofGneEwSRgEXn74mTBG4kHF3A2fd/vBTvW1dwALiPfstY1CoHW6YR4a5iszqw/PrEy3ZpEqBpqMl+2lG9ZMCxAm1+xc0J3tYLovYLnHua+lVt3IneFtLMj6EyJetawjcrS+uUWwyxU8Tbpuz9i2qsD1Fuhadfm6jsHBlk3uyevm0PoWZ4PIZUVP0GzyW3vVSuxzuduAkBqqznSVXxEGn8g7DWr4cYDbEutw+xZrZFnb9/YEq4GhrwpTkYZei4DvdkNMnYWk9ZhFAKXUt0PxFZ7JQTv8O1U4gKa1+zJAMzcdle+TPHxns7LEEX+QYPeLz0CwCtjDAN77jEj/+brWQHlIcJnGWgyxcEAGWMAehpo2POH2usztT9E8px7SQwXI1sjzZo1SHdEEoBchVOiKXil6jMvvqV6XMLsrte5gMgh6ogpc15j5ReUPDf5U8hdBmHfukOgWXUjuHc/KFJVduJqUHvE41lJfXF+gkcmHaCeJ8nzClL7Q6mTVfRiQH18Nsru9x0/Y/LTO83SWJT3laJ/r0uWvzwqigVZvdNjG4ELeD0dv8kByTCKqU64ARD7dmRfnUm0TS/k9/nXZCUKXlmtubLGlxx5nsWueO3Y+KqhkrxakGXWeW+9G25iu0DXJNcB59ZcEQUUk7ciyFaKnlbicdYnEsTN85UDOWxoMjad9C1dWxZHmhzGwC66PibNR17dV3eTizc5ryGZakGfShCOZn2l6g/taj4xQFBig0KRyCm62MybgdcPN3iRB6h6pgqSgqNaNJc6B8b5s1ctnmXIs+k4hYVGZBKaeNMIr70zws5Fn9jTHHYn/07JlCjp/jom7hzSXmi9XXmUBHKtenSxF2YycoOdpa+ELvsToU9e59dDKvT0JpnakXlvwkbuAq7nSkYWNwtG81fZKy/cr6ovaKap0Sb0XFxHbMnZG7OQBeRIT4ekvIeS1gUb5vSD+9GMEK/WMt8djxb4ppuiPUhq8PwX7puJI+FZc9VWuwrD5OeQqo9IVU8oYVpzyD0hMAe9Qnd3ZUVSBaCHsNkiJO4bejnvyFnwvheoHXeqxyshzKZqVMPKF9160NFTVM64OM/8lHFBWMqr++T4qHfkjrjgkPAGHVZxxy9WeO2rMi7pAOoXuAmsMwKV4W2Gm8vDbKwrGQZV4nP8IOWf0xLi594NGzhHpOUdqGjTKjnByNNo51FNrjwcT8/kCkCBMkNWOR/hxdaC4gIraeQSpxgVDM8tPaI1+CzyNuIqiI/+WI2z+l/DyHrYN/BiUL5Rf0DdzMXcT6oEfaMZVP3ohjZeWQ3yc839oqnvqMqxKlwCqfqfLTyxL5zXRRHKx/4V8uYcBtZgRZvMJd3ASwE8gb7oTdYluJ0i+MH1gmsljKuOmAW7QLfoIzZ2ifr5TVw5MWocCEz3aEw2fLe02gw+R0c7F574nx68u6T5y0ByAGFJqGBOdzazpQnvM2RHq1vMFwfaXhAbrZ5sFLFR9UaF5WXJEHbNePwARNA5eea+DqUp7uiGHlGEmjjFkBsNDL56of/A1khmngZMea5jg5nbq4b26hVNYf0/bO2ceSHrM7U/jNeG0clb7tccPIMnXD4XrarFqiuni/AnFobpjmRFv27SKuvAtrqqR78bODnm0YIWCO5FE4MO3+6c6kVIdeGr2nI6sHM4icslcpChfAiaUXYtlvh6oQ3pFfsxhP0rM4FmoxOUmJbjCXjmJzwv1/niW8cGDqZzOiGswY9iEfP1PUYxeCZ8sjA346JbMCOo5yRhZUQZMLt7/7Grr8sbju/9BmlmRLUIgasQ76+/YbbdnRM70FYjIpNUZsmwi4MFVOAMOtPLuekvLHZD6oAoGpXEgNDtdwIR0a54rfdhYjfbSayy+wf6vnGZ8zZ0iMKrwe0w1iaLUHBgZA7CgUKkGEUFEHgZP4dkQS8+IQoHi4YKU2O8pnrX9mvxHV0V3gxIUB9W0Uut/WBXS+XkDL5Lu4y8yb/gnLgqbFEi1TY7yzo2r/9UZq3SVTUQbhjScYF+LXAlCctiOdRoB9sBOawU6oAAoJS57PAUjIIK2gEVH549FSfxd/yuc/8ZfLAZfPZEVzJHmz/i1QkeSshkiq3bdVoguTfoLznXycic3u15eRvkDhQWhi7uCEYturMmdXDK/7PmmTHpNWPZwlFd9lpHrY3KBs7krVhZQYTEAmduGqadDsbatiIxUzs7NxsaevoVpJI0JZOJZC+cmCzGfI6EeXMzM3nJz5VoXYMaN2vFYiCjDyAEiVsfnOv6gC03KMHpuu9F5ZniEWTt1ig2wk4F5WkcyoKltbwwx/H+tt0M9clPcUGmic+iBLaNvj8eUmzM29e92XDtcr/oZ/GRU82CdPL0HC/inIxz/ty9pwSSWdL9P7x3bBpg0TFQPIyRNQZRaS6gW8Xoko2h5BtrWUPPva8sFy1uZn+EEa5Tvxh4IXLygVTIRrcqjKfwJCwkpr6N/ALtbh49erhEZ4Kwol84XKurRV3jjjAUlhk9q2A4JFsxHeDJrV5RfqdV5H602pIfLP9hHszn5Z602cTIST2Q4enPn7HYJY5eaphaxyiAzwf4tBdPBqFdBUFUJaghH7aZen/v3n+CIfwl53Zj2b28jyJdTfjnXI51sjWPVa9yqulaolVKdbAszfq1Qm0k+y7J/YYQv1n4eO7h6fhzySWzb6O5FntXN73T7GhMGYZOfHxU/oBG4u99Lv+uPYJ27+HfE8OGdaZ0NmHnEN+lTvd2CtkcFgJk5kU7jmLtia/z+Xa/8+o6OTBC2rh1i+sRlNCdEH7742exFd52lK7KeziK+mBDOk1X1Vac6xITc8t9oe+bxnHijmZmjluoT3hgnQzqEvWSYqFsSP9SDzAvnFjbuKcZXXUXUdCYE6Zxq1ZnZw81GPBxxLT8x5tWgmT3mOuSQWx6lYkJ1vIBd3yynz80N7y3Ft8oh269vRyr5oi654x5vyEDjiy0np95dZ+N9aq3Hlkox72AqSKzHMRPPI8aUPr97v9WyS7myDMNXqzQf95sADWrUhakvICHzMMNzReeMbASL3G1AeIIv82iua6gyQuTTZrO2RO22Y0CF2d9OBjWpA0tJKjX4J4kxeBEI0Hh4cMDGFX+y/G7f3DbgwAUjZEL9Xn6D960YXScDGkfGJcWGSGvGJOe9EotSkKM3ch1yNoIQ3Iuji1P0ifh5LUzNiRQgzF4DXT0aHNPTHSHvEy/Qu2fWmmMGHrar3U+3LpdzQBLIIWID1jH/7cPmjewQ5Yvh7ZSiFxm3Ulcdh/PzXtyqh/FGtwtQE606cCIvOXtooPeJEwbL8+Y2ZIOboa5McrGhuG77D5bhx42xB0yFYFUmrBIP037iN6RcQuunCeKBtEgvXETGio9PqVXOhaWJdLNTEg3K+ob5VTOMyiZoaR1h1VsmVx75xss3JbRH+TgWP4ZjvCQcG5OlmpP6m7FThClOXCtMXeU2hE3+QDc/VfZitOHpmJnl35t4IsdZ9D/UIAsb3J6SlWNB4Zv9ty8GHiwWWgNd6FiV5cQOq3jsCPX2cgdH/G7opYegJpIQAogYTYh/Um4TSoJzScQzpZVeeM3LVD6feakTWmakwIURxbq8og6cAZrrwwgua68Kr3JX7d2ji3fGGO/fdRXHVeThlPLG2OvyF2G/NBPAbKe4wBeof89IdsXXxcEqX5qjwOx/yCzOOfaFa9EP82kS0um34mT3fGdu0otXyD2aFEac3dd1wc5Ronu0Veuqqrsc92eyyO33LQBc/H5n7Q0zGjAVr+1ZJ8fm30c6zwwR8VjvCvBQGZvCjHfCCUBtjCnjEmQwQL8NRiekOzXl4M+E9Wlbia+0HI5tE4cyZ994ggSOgD0r42CZlCWkwGxvIgi71bCchQ62OSR10pd838ksF8xBgHReAAUqxpD56Iqj7DJeDsVQIQzi5/9MtRe5sJaEvb30hJbBEvssQdZSq+Dxci9D7gox+xuTvrMp9F1hiCQGx1IdfxeRaxZOz5JuNMGCSDUq0k48H+2CAI+GjD8WkGsGXxrDnghMbH+kAK8bqeZWrh3oDW3Bgv3WcSf5Y1QVA/z0vPMtn1SwFGJVRmTZqZ4i+XZYTDevMyYzHMjckfJGdxJsHGN4PsSDIeh1JIXwBfG0v8nRraKuqE109nDQyLwsyeL0IY3le/q+d39qJ3nUxQshFQFJEcPsZ2LIRIMLvRBgLg7zhDQrk6IAgZrdg9PqGIuuutoU6BGGSv9mSLOWjCLOz09ydFcTiS486i57u4By5+KTUWAi45vg1e0d8BHxtQCCcsY8mmQGKegGEi2gt7goinsYHy2qMK+F51wEcvdTsPVAF7NygurfspMpBiVpT9iZdneNSOHnpv6WVFzOZPxZ5mR5N/WJqoq9YoMAB5Nkz9b8bhoixUBkIPrFYVCJ4f26ZlAiniKf4JnfhaGhDs/gwmIdhEa/jK1HavcTWZUzZKYiAIS5Q4y0+ZrWwA/terIiFYi3KE9t93lBGcSCaGnrpUSir4KmBtqX42aCZsAjiSMKQWe8Id1UWdN8OxtVbnKXq+csPHRYDsf6i8DbynVpw6n0t6KJnuQxWBe9+7Mb5to+1sVTMPOETExeoPNFV8BUzB0rmlnvDkkZiinR3LsYM6LhdVzuCtCeVRtwcsJNCEDBevKA/ltDsIS3qoWs0Vp73VkSdV/DXe21H9rXwobJqaW09S/5mUloOLszHzYLCdwNSctBUyz4STuqB+rlUu0BRLbC5m49cP2KjZ1Hf9z2QJ0M6P3KVBgWmu2HEVN0VjPdihiqh7gnDiOufkjrwxBXrX8BZZ12JrALnH8XBHAejP7Zz5BCXhj/1c5FcHe+0hqsLTZ5a58y+TgY6t9wakDYqEyPAwQS/HJKLYq97v9RHwdbyhurcxi0wrv+8A+4z8/fr5C//o3qoNXcqm2XOQYrhe/xl8HwBE866rgRZ6kRDCB/JUNVM1GKsueAqzOSJFSRjiZk4fHC9wYswr+BMDzAmwx64ZXUROp0EiORUKPsjwCrGMbL4ZXkbkSUgJ52QGxJkw21f83pRjJbMSAXIxhRidWtDqWWGbrfO11I5BovTHZdJZY9qBoJ6vWbZL5I4bj7/8VspK72cuKCSvA6BmhlCPss9CWaPNqhBtg1z28kbQoogo8Zi70PO/pBbUjFBqVXTUEGYSpIho7dTsMboAGAf8OpLdCu3tLO5RmtJngWJUNy4MvDZaNdkBKPqF1wCfrF1sKBgGk5cHIXiWCuKqy7KoXWRKUaSjaqrcaALKXXXe5cWqCLFuSLNewZBC+fn4vfa8rBv6XyXUWUyQjiIujdITA7Jba0x8sW6jNwm0sUYP+0mym/GxoFedqoDE+qK2Z6edf3RdXE66BxQZYGeZXIWm1yvH/DfiZ5OLYrK2pST356vl4pG6YXAsSoPPcq8g7ylp2tAVpgX/aivim+dXAQk/yVp1FJO32Dq7aAPxB2wYuEHXLVf2NXs9YdL8K/SyJbarH4UhRHviNmJ9xHZdjK+JtuIIlzdxltDE2cnGXntdiuw90xv0eGJJEET+G7sFHDp+qBeuyb2sLMuKTc91+yOzmyQGIElO/Bap7O2/R/d+y8P3Nwoqyn+NsVP5+XuvohGsJf5eDz/lPmXWhipoBeyjOWvv/hDVLR7SaQsOG3TTYobaAp+FUw0Iv6eQ5hTaXGb+zoK0HZjqkDo8EOn4zcFILTqWWITyoGcHlQIpxOeRSdg5pLdFAijXVaTVUzOcUWxkM690Qr4/0m+QGv3BYJ1DUZfKCKZA8f7BiY6cGh+zJiDxDwaawJiudLE1754Gmb/6hBP5pmRrhJAwWwTNj6kY+tceu5bl5X8DmZ2fVrRn9PBYSLkYAU1c3o8xmAJyEpPUvYJPaaUuaz3aSkFakLtil9mQotcqOZnNABfSzeSIapH7LQv6a2l2Jw5yk5b2aLj/sw2CYfGuv+cldruFUtCJqR+nSHEv47DVFd3orLiCVzwGt67x1ZWfh1ggl+joM10a9kTdyIPybIaJbovvrk6PmhEpRGUf7awexW7Kg+c1VnG0hGRMDbhucvBgBLqyEe8DMXs6hGwC7zEqoGuhFnaAEG5vwzHxje8So54mRc7JYovmMXS1MWCiQwIzy7UZ5vUmdxbCEfKOK/dyQZuTY4cUl5VgBUt5lYKavyUtpqpHY6Hua5fylVk2A1DOFJs4jBUNyyRBTO+zlrnWOgDJDbaJkAumaRnBHCF2mvAkdFlIebYHNuFFMKQpYZ1BFGnnKM8iw26my75X4dS7Q9HRQglMo+VfwHLNrREs6JTpySTcTTdYHlvn/4bHcjPIsQvCNJjlTWcOHGgDhQ0/G2YlPW5uc+scHgVwc5++EUWgqtfxgc7IftsqHAKxs+G6qNnDnKEE4ze3hh5vYvK87jMzmOjNMVTRnAOYSBjqKuaS+p9Q+M1eOLcmvsfmDVwor8k+e89F6m4Mumm+dUJAW/C+XUR+QzrN/uIb7lJESWN17qKUqO8zuDBMJiLwDg71SScrHSzWb4n/anS5EKO7TeXpHPK+CWebB1R457p/4WBuDuWgtAZC0YXzf82nnw2f6xjMdOajjQUmWPgPMT86GLUO1PAnkkQgIIsiACXiCiRkdnhu6M+Y89BJtc9ytxYTZDZ3BTIrObXmi0xv1elZMSGgVdoLkcxVDEX/3z+rhn/KO94rR3lIo0/iVIYN7t6wQ9xgVItVpUC5zKuSVfCAUkSwnmmvDa09e8OnhiyL5d9vqaJt+4QVb6P3E0uIWY8BJ7WJfKgt6KdxN5enuACfSvkUzLiapghdWoCz9Xa3EuUVzSF1UMKhhGf2vYDgGJNdAPpouQA3GlVFfKyfbmyAcDikXTzKgifAZqFmMlPBJySjqP9lV7weL7rhOXKUIweryHjy1nOmJec4//kRjK9aUwxB5/waxprfd+b/WX8+niAeFwDvHdsTXayIH79p5OAqBmEXuUmqm8ggf0lsULqlu0yDEISYKR1OHlJp0r7amwrXz8/8tMkjlU6QBMkGiN043S9kkJHtZJIC+JFPDhoId0e9kLHYcFmz6x5mNtNMNnkAyvyjKaIlU/yrzJhtuBJq5iSmc3qgOI6x99WOIZWRxIUlRgPME0pwD0tvIzU06MHyroZRF0VPA0pNSJENl/tkXQ0Pqt0C32QX5enihrgJyQvXwghlfORHQOpfny3aChaskg/GnKZoayeahveVSNhkIUn1chp6GIk4dvBdieoe1XR2lUKxOyI402OYvtQ1Rl5JEwNSOUXToym5glvR+crAIAEYzDFxosX5YxqfDayR+xW1Dlscjbel+w0xgTTtEvnk7GkuChrgA402IJ1FIIGbHaLyYI1AyMnoEim+HAEYHTlcFhmflI3PQLLPz3r3BZPgZBYfPgcIO20Rw5DqZ71HWzVja/b4I1zmM0XMkwQyT9SakQzt80BIMwQSsN9CCCcI7sCBDLE+fR9MgtC6ZYyXw59yqexEAz5XibpVkduu9aT+rEWwybxw4AVXIBt5sS7B42jFCEhzrVJpIx/IURhYMvD64lQYvIOo0WlU+EUO3pjZ+miXbQ1DYJStaowcTeg2Sgf8eVJmtRa4mcrXrY4lYCezASsoFfdBJb/nVNA7dhN451/WlV3PszLPPQbGzP4W5TFYmQjfK1Fw/wzOj3Hlz2YS30EgSTFc4UL3PM9hBn5q8gG9v5ZyCUJXYc+onxrX7rlhsEofclD5svpeWw1FCwjngKGkZ6cjahni/156tM7lTC74pMKd0LWRm3eEgZ5s++uX0SeAS9j0bMVNxIz0pj8UTKGJt0ZOvSAkXmnD56oJViH7CPPbfbrWDZ8gFCQ8rn+ybxQbIbTH8Vi7wNEJzFChLeNxPDV0qxGn/FwDEEQAyqz50DuUKJdFAl9FmePfcpUhwyDh8KfWgVZkqlpPr9V8P7JXgWew6p00a+TBwbeI2L7jIy8jINxPaYYCip73JxI6PKBSEpxjH4gIN23znMM81OAmY8stX3sknR6j83AghLwURSZjqRI0u2rFRddjUVNSffHBpbwQ05quTEbApmGm7BUA7LklwtEqIgmFNmYABtgISxcIipScN4MFw8ueZBGBbos/jotc8huc99BKxQs+fMQatFlj6T5gviXi6Yv3g5viSDqs0uww3o6vKp2pDJsZYKZL9h9TLLCXtLO33qXEa73EPnaWxotkcB4taByyZI+eE7g1FVR/5TObdXHbNrlwAXp0cdPFGqiDtW2wAV4AYWqz5oYZ7Lv564J5TgQZqbUWYm2+Oq5fmXZ9Tk8AUzwRG3fKw6b/wsxXq1ICU8vl702NqR+b2wNWkKAg/PUV61WQpvVJaNvyVfbHJNRubSrMJdU6N8K5vMFmdPCueICzky2JfJTS9H3lPY+svIM/4doDK4irV3JyZRaSqbMjTlXlfisrhYHQ3ycI76Ad1faBsW2BGJ5vjAJ5V7CLwF+k8eXG8p9AK8pinqD3UZ3iVhwqHmwQbk2VKCA0GkxLJlWHDDDV7qC89dj94N2y6U06HZAHAcJYBotfyA8xUdTkUxjnitN1n3lX4VMS00O0JEYC7p+37uGoP/GjS7LTQFMRMx1JDXuRT7PH2fK7Z4ve4wLCO8b9tYkZirAN1QoB20Dep72pWXq5emtDLVJhtzPNkfpVguvvZmYPTCJC/bfkqb2bf2TLVL5w0go9HtSdmiqiXPz439x6otV3b6/YQFF2agp1dCoBbJkjn5ZifZMpzfYsGsWzhFq69kVUG0uIDiR6xNBBAviNykOieRhpdMNl8esXVc8sjKjnozgpXQzpLC2eEMLrrK2rwaM3V82OGXps6p0dzRpZ/Qx3XN67WOv9u2tZAqAbpXCgwO4BKVzKWLtJO5Dah8yPk9bYlSnT9QIMJ11I0wvMqjL3J9tqVF+28cVWCkpf5YlKAtFB/RgUZ7y2jI/qWI/epm7y/ME0a6x+bVFyEaAPVPKCoO6rhpPF8q41IKCJKkHRUsjn/iAAY5/qa0qvTbzkkxTVDED6x4jEmTTI7tAhiCdEtYT9sv2F4WcwdgGbbV7i2ymiB9g4k+0nHxqQPOSLym1v8iApH5l71YWbt+hy0yQIbAUG91PKxpbxsqN3ETIT0EIICWHAnddg6/pXTJYlAS+hLjhQqkx6JyFPIWTimCXK7JECYYyRjbCUEpFAHD+AZNujdjzVdQL/mGxyFITDR7MFyLKSeefF78lVFCl40hppQB9+Zxrx1JpnmktfDj/sEDFWqLDPFjfyTnhX+tpaSCpxNivMn5PUu4L9mRe3EIMwh/iSz+pkMBgl0Zu6n//4f4qTMi9JigKyK/9jO7kTuQnt7BgDeP4Imoe9R0uVUrgnU1Viv/0y6FvqNBiG0Xe8I/jwAoPt7vYXOufwbEVLjn0qQuq/ERiQfsLsqd1MlSWtzajyhIVesmx6IV871LUlJg8POn696eBuZyQRUfRXxggUCWu/fvEjSGHu7rqJXf/v9jVfS4wlhlYV6haXgEbIUuicg0xKeRw1RjgiCfdToOPLRGbD/jX1rEOHKJaBC2f+wKrJI71LDSOWBV0c2mDjdufinJu2KXl6W2CPvxWkssLvGQUFIfE1qq5XotRLw4Idc9kJSfTcOlRcn1L+KJB3d7g39TAlWwW7mM1vNe+3/fhh0YYv86VpDfXtzhh85Sa6DX9hhIsoT+cB4lf0Pc/Dpj0ADJ9uZGUS09/NCOqnZaC53MdQ0XZzm0QjmXNx16cMejWGp/6D+czwVLnBRjAsim6m9jO/L6F4YZ1xY192bZFHkUwy/QXhSLgTutUzmySqWR0hkvcEmJ7LaMtiYJhcWSFegKUVIYl5U4X9057w6APtKuIpgWAtNCsVNRvh9MCbrME7P5A+biWsTeXEDOBG5bz3yzkChLA6OghvC/ahhPUhJx6oYJ1M5a0UfQXW9h3aaD3JsQJSfLEoM4Y+S6auosPjbByGU0SWznwkh+3VyBF+wgQFot5VINaxY85X1eBu6A5ikrRX840CATGDnpoP76xLkisonbqKha5ofaIJDTh6r/yhs0yU/IVQ5nxxNeQNtrdfSRIU6uLKyVzVvcpg/MLh+xc3VXhEijdxjz/vTwwnqf25nnEiw6NIZeETnf9AbuMidGpD8il4SlPlUM9Zn3cd787j2tKpusDAZeRAmGSC1P5g88uQx5kFvOoB4FMZlN6iphhDUNuB0L+4BwHUlrXYnVaPE2qAzA8Nt1GWqRXEq/3cDmtzZ/Ec2LSO6aVslRHQlxH0NDINc4JsOvYenGUj7LaKBapvF0UVM92VJfz+tre67zqUVZ3e+d15al8KCgeE9I+GDyu9lep1XcgtzRvU9MClAMGSQY9ccR1bNLXM8BQuu2o+S1zbnqx1uerHwaTBpyRK0o1APn6ofh4EqciwDHZ/h++a19a4/+SUtf8qjn8N/7taig/v/iRq33PvQTTOnIU5T1qPipnfcFt49IY2rEduGDm5c9QZr7RhitmmERQ+/DpZl2BOT/uTcGvP8TjZd2pX/UCiW/C7yUU5jXTvSS82dVAsaeHBBrTitedjizyhjhesRDxqVOSlx5JxD7xOZeGRC1Jl85qNBzQ0uOt2trIoyMQx1TxFMmLTGrG1DgQS2Mjx0vyJ4MiFDjIyZmkxGhFJPsJj2+wUYxzcPR0Q8EpnBuQVvLPGTi9CsjZe6Ovjo1eFnVUZBJCZ4F2hs6sUvJ/3SZAI9QHEKiR0VnMOndrAdZG/1Kd/XcwPrnHdDo7ORsrACcN2zNtIdGhUVMBkmRpZIK31S4wQqV71EF0/Z+NduNEo7tpSDRNJYvIftIeeBtOznvSqa+IS5QogQ/DhXBPphkHePVKeYGXzu/ufYUpKZNXWzIKrDTdA6qtEMOG6wnQLub4+opkvg6pMiRIU2eSwHMC/HMXBmD02AjdeAQkd9/WMP0fQkhV0wBktOya90rbXp+SfIDCRgUOwsrXUheZUya1RYZiECkmnQWPBHbs1IwqW16lc8MrhA2C0Ma4AZOtTAAEkpxHU4ISSAcoJCLPNi8LcvCRBRcBI33S06q2wwxiJp4YKiXhG0N4LReFwhVzo9CqwPOE5Ifzka1Ek0wAAAAA="
             },
         ];
 
         /* ==========================================================================
-        2. DYNAMIC TEMPLATE RENDER ENGINE
+           2. RENDER ENGINE
            ========================================================================== */
         const productsContainer = document.getElementById('products-container');
         const template = document.getElementById('product-card-template');
 
-        /**
-         * Renders products into the DOM using <template>
-         * @param {Array} items - Array of product objects
-         */
         function renderProducts(items) {
-            // Clear current items inside container
             productsContainer.innerHTML = '';
 
             if (!items || items.length === 0) {
@@ -383,14 +638,11 @@
                 return;
             }
 
-            // Fragment to minimize DOM reflows
             const fragment = document.createDocumentFragment();
 
             items.forEach(product => {
-                // Clone template content (deep copy)
                 const clone = template.content.cloneNode(true);
 
-                // Populate template node elements
                 const imgEl = clone.querySelector('.js-product-image');
                 imgEl.src = product.image;
                 imgEl.alt = product.name;
@@ -400,22 +652,19 @@
                 clone.querySelector('.js-product-desc').textContent = product.description;
                 clone.querySelector('.js-product-price').textContent = product.price.toFixed(2);
 
-                // Attach event listener to clone's action button
                 const btn = clone.querySelector('.js-product-btn');
                 btn.addEventListener('click', () => {
                     openConsultModal(product.name);
                 });
 
-                // Append populated clone to fragment
                 fragment.appendChild(clone);
             });
 
-            // Append all rendered items to the DOM container
             productsContainer.appendChild(fragment);
         }
 
         /* ==========================================================================
-           3. FILTERING & SEARCH LOGIC
+           3. FILTERING & SEARCH
            ========================================================================== */
         let activeCategory = 'all';
         let searchQuery = '';
@@ -426,7 +675,7 @@
         function applyFilters() {
             const filtered = productsData.filter(product => {
                 const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
-                const matchesSearch = product.name.toLowerCase().includes(searchQuery) || 
+                const matchesSearch = product.name.toLowerCase().includes(searchQuery) ||
                                       product.description.toLowerCase().includes(searchQuery);
                 return matchesCategory && matchesSearch;
             });
@@ -449,7 +698,7 @@
         });
 
         /* ==========================================================================
-           4. MOBILE NAVIGATION & MODAL HANDLERS
+           4. NAVIGATION & MODAL
            ========================================================================== */
         const hamburgerBtn = document.getElementById('hamburger-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -489,13 +738,43 @@
             if (e.target === consultModal) closeConsultModal();
         });
 
+        /* ==========================================================================
+           5. EMAILJS — ENVÍO DEL FORMULARIO DE CONTACTO
+           ========================================================================== */
         const mainContactForm = document.getElementById('main-contact-form');
-        mainContactForm.addEventListener('submit', (e) => {
+        const submitBtn = mainContactForm.querySelector('button[type="submit"]');
+        const originalBtnContent = submitBtn.innerHTML;
+
+        mainContactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            showToast('¡Mensaje enviado con éxito a Lightswitch!');
-            mainContactForm.reset();
+
+            // Estado de carga
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Enviando...</span>';
+
+            try {
+                const response = await emailjs.sendForm(
+                    EMAILJS_SERVICE_ID,
+                    EMAILJS_TEMPLATE_ID,
+                    mainContactForm
+                );
+
+                if (response.status === 200) {
+                    showToast('¡Mensaje enviado con éxito a Lightswitch!');
+                    mainContactForm.reset();
+                }
+            } catch (error) {
+                console.error('EmailJS error:', error);
+                showToast('Error al enviar. Intenta de nuevo o contáctanos por WhatsApp.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnContent;
+            }
         });
 
+        /* ==========================================================================
+           6. TOAST
+           ========================================================================== */
         function showToast(message) {
             const toast = document.createElement('div');
             toast.className = 'toast-notification';
@@ -515,7 +794,6 @@
             }, 3500);
         }
 
-        // Initial render execution on page load
         window.addEventListener('DOMContentLoaded', () => {
             renderProducts(productsData);
         });
