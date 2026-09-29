@@ -2259,6 +2259,17 @@ div.logo-container:hover {
     opacity: 1;
     transform: translateY(-50%) translateX(0);
 }
+.modal-card .btn-submit {
+    background-color: #25D366 !important;
+    color: #ffffff !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.modal-card .btn-submit:hover {
+    background-color: #1ebe5a !important;
+}
 
 @keyframes wa-pulse {
     0%, 100% {
